@@ -3,3 +3,4 @@ sentence-transformers
 langchain
 langchain_community
 langchain_text_splitters 
+ollama # for llm. Not strictly necessary, can be changed

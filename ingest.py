@@ -59,7 +59,6 @@ if __name__ == "__main__":
     #    print("type: ", type(chunk))
     #    print("Chunk:\n", chunk)
     
-    print("\n###############\nbuild_vector_db\n")
     build_vector_db(chunks)
 
     print("Multi-document FAISS index created.")
