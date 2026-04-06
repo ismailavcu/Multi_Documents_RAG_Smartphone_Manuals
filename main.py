@@ -1,7 +1,18 @@
+# for langsmith load api key
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from the .env file (if present)
+load_dotenv()
+
+# load_dotenv loads: os.getenv('LANGSMITH_PROJECT'), os.getenv('LANGSMITH_API_KEY'), os.getenv('LANGSMITH_TRACING_V2')
+
+
+from langsmith import traceable
 from utils import extract_phone_model
 from rag import generate_answer
 
-
+@traceable(name="RAG chat")
 def chat():
     print(" ###### Multi-Document RAG Assistant ###### ")
     print("Type 'exit' to quit\n")
