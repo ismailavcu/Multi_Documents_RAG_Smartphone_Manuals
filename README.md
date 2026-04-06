@@ -4,7 +4,7 @@ A simple but scalable **Retrieval-Augmented Generation (RAG)** project that answ
 
 This project demonstrates how to build a **multi-document semantic search + QA system** using FAISS and HuggingFace embeddings — without a backend, UI, or complex infrastructure.
 
-I did this project for learning purposes, the project does not represet a real-life work.
+I did this project for learning purposes, the project does not represent a real-life work.
 
 ---
 
