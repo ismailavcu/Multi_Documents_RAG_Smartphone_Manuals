@@ -1,5 +1,6 @@
 from retriever import Retriever
 import ollama # for chat model, can be changed
+from langsmith import traceable
 
 retriever = Retriever()
 
@@ -22,7 +23,7 @@ Question:
 Answer:
 """
 
-
+@traceable(name="generate_answer")
 def generate_answer(query: str, phone_model: str):
     docs = retriever.retrieve(query, phone_model)
 

@@ -8,11 +8,11 @@ load_dotenv()
 # load_dotenv loads: os.getenv('LANGSMITH_PROJECT'), os.getenv('LANGSMITH_API_KEY'), os.getenv('LANGSMITH_TRACING_V2')
 
 
-from langsmith import traceable
+#from langsmith import traceable
 from utils import extract_phone_model
 from rag import generate_answer
 
-@traceable(name="RAG chat")
+#@traceable(name="RAG chat") # no need here? see rag.py generate_answer function
 def chat():
     print(" ###### Multi-Document RAG Assistant ###### ")
     print("Type 'exit' to quit\n")
